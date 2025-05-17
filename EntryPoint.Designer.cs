@@ -1,6 +1,6 @@
 ﻿namespace VehicleMaintenanceSystem
 {
-    partial class Form1
+    partial class EntryPoint
     {
         /// <summary>
         ///  Required designer variable.
@@ -110,11 +110,12 @@
             btnSignup.Text = "Sign up here";
             btnSignup.Click += labelSignup_Click;
             // 
-            // Form1
+            // EntryPoint
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(340, 450);
+            AutoSize = true;
+            ClientSize = new Size(334, 411);
             Controls.Add(btnSignup);
             Controls.Add(labeldonthaveaccount);
             Controls.Add(btnLogin);
@@ -123,8 +124,9 @@
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "EntryPoint";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "BMC VMS";
             ResumeLayout(false);
             PerformLayout();
         }

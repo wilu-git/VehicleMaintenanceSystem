@@ -2,10 +2,10 @@ using System.Data.SqlClient;
 
 namespace VehicleMaintenanceSystem
 {
-    public partial class Form1 : Form
+    public partial class EntryPoint : Form
     {
-        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Louie\source\repos\wilu-git\VehicleMaintenanceSystem\UserDatabase.mdf;Integrated Security=True;";
-        public Form1()
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Louie\source\repos\wilu-git\VehicleMaintenanceSystem\UserDatabase.mdf;Integrated Security=True;";
+        public EntryPoint()
         {
             InitializeComponent();
         }
@@ -13,6 +13,8 @@ namespace VehicleMaintenanceSystem
 
         private void labelSignup_Click(object sender, EventArgs e)
         {
+            Signup signup = new Signup();
+            signup.ShowDialog();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
