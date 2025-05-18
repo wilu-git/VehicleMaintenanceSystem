@@ -61,6 +61,7 @@
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(249, 23);
             txtFirstName.TabIndex = 1;
+            txtFirstName.KeyPress += NameTextBox_KeyPress;
             // 
             // labelFirstName
             // 
@@ -86,6 +87,7 @@
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(249, 23);
             txtLastName.TabIndex = 3;
+            txtLastName.KeyPress += NameTextBox_KeyPress;
             // 
             // label3
             // 
