@@ -8,13 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VehicleMaintenanceSystem
 {
 
     public partial class Signup : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Louie\source\repos\wilu-git\VehicleMaintenanceSystem\UserDatabase.mdf;Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Louie\source\Files\VehicleMaintenanceSystem\Databases\UserAdminDb.mdf;Integrated Security = True";
+
         public Signup()
         {
             InitializeComponent();

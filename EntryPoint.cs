@@ -1,10 +1,12 @@
 using System.Data.SqlClient;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VehicleMaintenanceSystem
 {
     public partial class EntryPoint : Form
     {
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Louie\source\repos\wilu-git\VehicleMaintenanceSystem\UserDatabase.mdf;Integrated Security=True;";
+        private string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Louie\source\Files\VehicleMaintenanceSystem\Databases\UserAdminDb.mdf;Integrated Security = True";
+
         public EntryPoint()
         {
             InitializeComponent();
